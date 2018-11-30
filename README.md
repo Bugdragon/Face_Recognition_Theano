@@ -15,6 +15,7 @@
 
 ### 版本条件
 * Ubuntu 18.04LTS(64-bit)
-* Python 3.6.5(pip3)
+* Python 3.6.6(pip3)
 * Numpy 1.15.4
 * Theano 1.0.3
+* PIL 1.1.7

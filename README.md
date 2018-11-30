@@ -8,7 +8,7 @@
 
 ### 代码实现
 1. 实现图像加载函数，添加label，分割数据集☑
-2. 参考LeNet5，定义ConvPoolLayer、HiddenLayer、LogisticRegression三个layer
+2. 参考LeNet5，定义ConvPoolLayer、HiddenLayer、LogisticRegression三个layer☑
 3. 构建网络架构：input->layer0(ConvPoolLayer)->layer1(ConvPoolLayer)->layer2(HiddenLayer)->layer3(LogisticRegression)
 4. 设置优化算法，应用于Olivetti Faces进行人脸识别
 5. 训练结果以及参数设置的讨论

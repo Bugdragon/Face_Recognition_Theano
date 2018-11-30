@@ -12,3 +12,9 @@
 3. 构建网络架构：input->layer0(ConvPoolLayer)->layer1(ConvPoolLayer)->layer2(HiddenLayer)->layer3(LogisticRegression)
 4. 设置优化算法，应用于Olivetti Faces进行人脸识别
 5. 训练结果以及参数设置的讨论
+
+### 版本条件
+* Ubuntu 18.04LTS(64-bit)
+* Python 3.6.5(pip3)
+* Numpy 1.15.4
+* Theano 1.0.3

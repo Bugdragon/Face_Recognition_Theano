@@ -2,8 +2,7 @@
 使用Theano实现类似LeNet5的人脸识别器
 
 ### 人脸图像库Olivetti Faces
-纽约大学的小型人脸库，由40个人的400张图片构成，即每个人的人脸图片为10张。每张图片的灰度级为8位，每个像素的灰度大小位于0-255之间，每张图片大小为64×64。
-如下图，图片大小是1190*942，一共有20*20张人脸，每张人脸大小是57*47：
+纽约大学的小型人脸库，由40个人的400张人脸图片构成，即每个人10张人脸图片。如下图，图片大小是942x1140，一共有20x20张人脸，每张人脸大小是47x57：
 ![Image text](https://raw.githubusercontent.com/Bugdragon/Face_Recognition_Theano/master/olivettifaces.gif)
 
 ### 代码实现

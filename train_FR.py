@@ -165,3 +165,21 @@ def save_params(param1, param2, param3, param4):
     cPickle.dump(param3, write_file, -1)
     cPickle.dump(param4, write_file, -1)
     write_file.close()
+
+'''
+优化算法是minibatch SGD，比如image_shape=(batch_size, 1, 57, 47)
+可以设置的参数有：
+batch_size,但应注意n_train_batches、n_valid_batches、n_test_batches的计算都依赖于batch_size
+nkerns=[5, 10]即第一二层的卷积核个数可以设置
+全连接层HiddenLayer的输出神经元个数n_out可以设置，要同时更改分类器的输入n_in
+学习速率learning_rate
+'''
+def evaluate(lr=0.05, n_epochs=200, dataset='olivettifaces.gif', nkerns=[5,10], batch_size=40):
+    # 随机数生成器，用于初始化参数
+    rng = np.RandomState(23455)
+    # 加载数据
+    datasets = load_data(dataset)
+    train_set_X, train_set_y = datasets[0]
+    val_set_X, val_set_y = datasets[1]
+    test_set_X, val_set_y = datsets[2]
+    # 计算batch个数
